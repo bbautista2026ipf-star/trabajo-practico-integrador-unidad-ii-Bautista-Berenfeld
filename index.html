@@ -4,107 +4,196 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Inicio</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
->
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <carreras>
-        <!-- enlaces a los demas sitios -->
-    <a href="carreras.html" rel="stylesheet"> carreras </a>
-    <a href="contacto.html" rel="stylesheet"> contacto </a>
-    <a href="index.html" rel="stylesheet"> inicio </a>
-    <a href="institucional.html" rel="stylesheet"> institucional </a>
-    <!-- bienvenida -->
-    <h1>Bienvenido a mi página web</h1>
 
-    <!-- párrafo de ejemplo -->
-    <p>Esta es una página de ejemplo utilizando Bootstrap 5.</p>
+  <body>
+    <nav id="navegacion">
+      <a href="index.html" class="enlace">inicio</a>
 
-   <!-- carrusel de imagenes --->
-    <div id="carouselExample" class="carousel slide">
+      <div class="dropdown">
+        <a
+          class="enlace dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          carreras
+        </a>
+        <ul class="dropdown-menu menu-desplegable">
+          <li>
+            <a class="dropdown-item sub-enlace" href="mecatronica.html"
+              >Mecatrónica</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item sub-enlace" href="quimica.html">Química</a>
+          </li>
+          <li>
+            <a class="dropdown-item sub-enlace" href="telecomunicaciones.html"
+              >Telecomunicaciones</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item sub-enlace" href="software.html"
+              >Desarrollo de Software Multiplataforma</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <a
+          class="enlace dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          institucional
+        </a>
+        <ul class="dropdown-menu menu-desplegable">
+          <li>
+            <a class="dropdown-item sub-enlace" href="historia.html"
+              >Historia</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item sub-enlace" href="autoridades.html"
+              >Autoridades</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item sub-enlace" href="ubicacion.html"
+              >Ubicación</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <a href="contacto.html" class="enlace">contacto</a>
+    </nav>
+
+    <h1 class="titulo">Bienvenido a mi página web</h1>
+    <p class="descripcion">
+      El instituto politecnico es un Organismo Descentralizado de la Administración Pública, relacionado con el poder <br>
+      ejecutivo a través del Ministerio de Cultura y Educación de la Provincia de Formosa establecido en el Decreto Nº 18 del 2018.
+    </p>
+
+    <div id="carrusel-principal" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="..." />
+          <img src="assets/img/foto1.jpg" class="d-block w-100" alt="Foto 1" />
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
+          <img src="assets/img/foto2.jpg" class="d-block w-100" alt="Foto 2" />
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
+          <img src="assets/img/foto3.jpg" class="d-block w-100" alt="Foto 3" />
         </div>
       </div>
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExample"
+        data-bs-target="#carrusel-principal"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExample"
+        data-bs-target="#carrusel-principal"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
 
+    <div class="d-flex flex-wrap gap-3 mt-4 contenedor-tarjetas">
+      <div class="card tarjeta" style="width: 18rem">
+        <img
+          src="assets/img/mecatronica.webp"
+          class="card-img-top"
+          alt="Mecatrónica"
+        />
+        <div class="card-body">
+          <h5 class="card-title titulo-tarjeta">Mecatrónica</h5>
+          <p class="card-text texto-tarjeta">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="carreras.html" class="btn btn-primary boton-tarjeta"
+            >Mira nuestro plan de estudio!</a
+          >
+        </div>
+      </div>
 
-    <!-- seccion de cards -->
+      <div class="card tarjeta" style="width: 18rem">
+        <img src="assets/img/quimica.webp" class="card-img-top" alt="Química" />
+        <div class="card-body">
+          <h5 class="card-title titulo-tarjeta">Química</h5>
+          <p class="card-text texto-tarjeta">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="carreras.html" class="btn btn-primary boton-tarjeta"
+            >Mira nuestro plan de estudio!</a
+          >
+        </div>
+      </div>
 
-    <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <div class="card tarjeta" style="width: 18rem">
+        <img
+          src="assets/img/telecomunicaciones.webp"
+          class="card-img-top"
+          alt="Telecomunicaciones"
+        />
+        <div class="card-body">
+          <h5 class="card-title titulo-tarjeta">Telecomunicaciones</h5>
+          <p class="card-text texto-tarjeta">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="carreras.html" class="btn btn-primary boton-tarjeta"
+            >Mira nuestro plan de estudio!</a
+          >
+        </div>
+      </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <div class="card tarjeta" style="width: 18rem">
+        <img src="assets/img/software.webp" class="card-img-top" alt="Software" />
+        <div class="card-body">
+          <h5 class="card-title titulo-tarjeta">
+            Desarrollo de Software Multiplataforma
+          </h5>
+          <p class="card-text texto-tarjeta">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="carreras.html" class="btn btn-primary boton-tarjeta"
+            >Mira nuestro plan de estudio!</a
+          >
+        </div>
+      </div>
+    </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+    <footer>
+      <div class="footer-estilo">
+        <p class="texto-footer">
+          &copy; 2025 Derechos Reservados al Instituto Politcenico Formosa Dr. Alberto Marcelo Zorrilla
+        </p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
