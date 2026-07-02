@@ -118,3 +118,118 @@ body {
   font-size: 0.9rem;
   text-align: center;
 }
+
+/* --- Estilos Institucionales --- */
+
+.cabecera-institucional {
+  background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+  border-bottom: 5px solid #0d6efd;
+}
+
+.titulo-principal-blanco {
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.subtitulo-blanco {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.titulo-seccion {
+  color: #212529;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.caja-texto-destacado {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+.texto-parrafo {
+  color: #495057;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.alerta-historica {
+  background-color: #e9ecef;
+  border-color: #0d6efd !important;
+  color: #212529;
+}
+
+.tarjeta-valor {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-top: 4px solid #0d6efd;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.tarjeta-valor:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icono-valor {
+  font-size: 3rem;
+}
+
+.titulo-valor {
+  color: #212529;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.texto-valor {
+  line-height: 1.6;
+}
+
+.tarjeta-autoridad {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.tarjeta-autoridad:hover {
+  border-color: #0d6efd !important;
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.15) !important;
+}
+
+.avatar-autoridad {
+  width: 80px;
+  height: 80px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"%3E%3Cpath d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/%3E%3C/svg%3E');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nombre-autoridad {
+  font-size: 1.1rem;
+  color: #343a40;
+  font-weight: 700;
+}
+
+.cargo-autoridad {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sombra-acordeon {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+}
+
+.accordion-button:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
