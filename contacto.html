@@ -3,16 +3,234 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contacto</title>
+    <title>Contacto - IPF</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
+    <nav id="navegacion">
+      <a href="index.html" class="enlace">inicio</a>
+
+      <div class="dropdown">
+        <a
+          class="enlace dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          carreras
+        </a>
+        <ul class="dropdown-menu menu-desplegable">
+          <li>
+            <a class="dropdown-item sub-enlace" href="carreras.html#mecatronica"
+              >Mecatrónica</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item sub-enlace" href="carreras.html#quimica"
+              >Química</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item sub-enlace"
+              href="carreras.html#telecomunicaciones"
+              >Telecomunicaciones</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item sub-enlace" href="carreras.html#software"
+              >Desarrollo de Software Multiplataforma</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <a
+          class="enlace dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          institucional
+        </a>
+        <ul class="dropdown-menu menu-desplegable">
+          <li>
+            <a
+              class="dropdown-item sub-enlace"
+              href="institucional.html#historia"
+              >Historia</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item sub-enlace"
+              href="institucional.html#mision-vision"
+              >Misión y Visión</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item sub-enlace"
+              href="institucional.html#autoridades"
+              >Autoridades</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item sub-enlace"
+              href="institucional.html#estructura"
+              >Estructura Organizativa</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <a href="contacto.html" class="enlace active">contacto</a>
+    </nav>
+
+    <header class="cabecera-contacto py-5 mb-5 text-center">
+      <div class="container">
+        <h1 class="titulo-principal-blanco">Contacto IPF</h1>
+        <p class="subtitulo-blanco lead">
+          Comunicate con nosotros para resolver tus dudas institucionales o
+          académicas.
+        </p>
+      </div>
+    </header>
+
+    <main class="container mb-5">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="tarjeta-formulario p-4 rounded-3 shadow-sm">
+            <h2 class="titulo-seccion border-bottom pb-2 mb-4">
+              Formulario de Contacto
+            </h2>
+            <form id="formulario-contacto">
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-bold">Nombre:</label>
+                <input
+                  type="text"
+                  class="form-control campo-formulario"
+                  id="nombre"
+                  placeholder="Ingresá tu nombre completo"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email:</label>
+                <input
+                  type="email"
+                  class="form-control campo-formulario"
+                  id="email"
+                  placeholder="nombre@ejemplo.com"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="mensaje" class="form-label fw-bold">Mensaje:</label>
+                <textarea
+                  class="form-control campo-formulario"
+                  id="mensaje"
+                  rows="5"
+                  placeholder="Escribí tu consulta aquí..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary boton-enviar w-100 py-2 fw-bold text-uppercase"
+              >
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="tarjeta-info p-4 rounded-3 shadow-sm mb-4">
+            <h2 class="titulo-seccion border-bottom pb-2 mb-4">
+              Información de Contacto
+            </h2>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong class="text-primary d-block"> Dirección:</strong>
+                Ruta Nac. 81 km. 1190<br />
+                Formosa, Provincia de Formosa
+              </li>
+              <li class="mb-3">
+                <strong class="text-primary d-block"> Email:</strong>
+                <a
+                  href="mailto:info@ipf.edu.ar"
+                  class="text-decoration-none text-dark"
+                  >info@ipf.edu.ar</a
+                >
+              </li>
+              <li class="mb-3">
+                <strong class="text-primary d-block"> WhatsApp:</strong>
+                <a
+                  href="https://wa.me/5493704860530"
+                  target="_blank"
+                  class="text-decoration-none text-dark"
+                  >3704860530</a
+                >
+              </li>
+              <li class="mb-3">
+                <strong class="text-primary d-block"></strong>
+                  Horarios de Atención:</strong
+                >
+                Lunes a Viernes de 08:00 a 12:00 hs y de 16:00 a 20:00 hs.
+              </li>
+            </ul>
+
+            <h3 class="h5 mt-4 fw-bold text-primary">Redes Sociales</h3>
+            <div class="d-flex gap-3 mt-2">
+              <a
+                href="https://www.facebook.com/IPFormosa"
+                target="_blank"
+                class="btn btn-outline-primary btn-sm fw-bold"
+                >Facebook</a
+              >
+              <a
+                href="https://www.instagram.com/ipformosa/"
+                target="_blank"
+                class="btn btn-outline-danger btn-sm fw-bold"
+                >Instagram</a
+              >
+            </div>
+          </div>
+
+          <div class="tarjeta-mapa rounded-3 overflow-hidden shadow-sm border">
+            <h3
+              class="h6 bg-light m-0 p-2 text-center border-bottom fw-bold text-secondary"
+            >
+              Ubicación
+            </h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.988029584061!2d-58.1963032!3d-26.1823908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDExJzU2LjYiUyA1OMKwMTEnNDYuNyJX!5e0!3m2!1ses!2sar!4v1680000000000!5m2!1ses!2sar"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
